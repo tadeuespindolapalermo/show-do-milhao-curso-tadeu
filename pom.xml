@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.com.showmilhao</groupId>
+  <artifactId>show-milhao</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Show do Milhão</name>
+  <description>Projeto Show do Milhão com Java FX</description>
+  
+  <dependencies>
+  
+  	<dependency>
+  		<groupId>org.openjfx</groupId>
+  		<artifactId>javafx-fxml</artifactId>
+  		<version>14</version>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>org.xerial</groupId>
+  		<artifactId>sqlite-jdbc</artifactId>
+  		<version>3.20.1</version>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>javazoom</groupId>
+  		<artifactId>jlayer</artifactId>
+  		<version>1.0.1</version>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>com.jfoenix</groupId>
+  		<artifactId>jfoenix</artifactId>
+  		<version>9.0.9</version>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>log4j</groupId>
+  		<artifactId>log4j</artifactId>
+  		<version>1.2.17</version>
+  	</dependency>
+  	
+  </dependencies>
+  
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>11</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

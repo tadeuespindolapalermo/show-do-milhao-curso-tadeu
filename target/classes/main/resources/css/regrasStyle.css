@@ -1,0 +1,6 @@
+@import url("buttonStyle.css");
+
+#labelRegras {
+	-fx-font-weight: bold;
+	-fx-font-size: 14;
+}
